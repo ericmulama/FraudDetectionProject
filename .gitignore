@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+
+# Data
+data/Fraud.csv
+
+# Model files
+model.pkl
+features.pkl
+
+# IDE/editor files
+.vscode/
+.idea/
+.DS_Store
