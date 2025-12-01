@@ -19,22 +19,37 @@ FraudDetectionProject/
 │── data/
 
 │ └── Fraud.csv
+
 │
 │── notebooks/
+
 │ └── Fraud_Detection.ipynb ← EDA, plots, and explanations
+
 │
 │── src/
+
 │ ├── load_data.py
+
 │ ├── eda.py
+
 │ ├── features.py
+
 │ ├── preprocessing/
+
 │ │ └── preprocessing.py
+
 │ ├── model.py
+
 │ └── utils.py
+
 │
+
 │── main.py ← Runs the full ML pipeline
+
 │── dashboard.py ← Runs the interactive dashboard
+
 │── requirements.txt
+
 │── README.md
 
 
