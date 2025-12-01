@@ -50,104 +50,63 @@ python -m venv venv
 venv\Scripts\activate
 # macOS/Linux
 source venv/bin/activate
-Install required packages:
 
+**Install required packages:**
 pip install -r requirements.txt
-Running the ML Pipeline
-Make sure data/Fraud.csv exists.
 
+**Running the ML Pipeline**
+Make sure data/Fraud.csv exists.
 Run main.py to execute the full pipeline:
 
-python main.py
+**python main.py**
 This will:
-
 Load the dataset and check for missing values
-
 Perform feature engineering (ratios, balance differences, one-hot encoding transaction types)
-
 Split the dataset into training and testing sets
-
 Handle class imbalance using SMOTE
-
 Train an XGBoost classifier
-
 Evaluate the model and print:
-
 Classification report (precision, recall, F1-score)
-
 Confusion matrix
-
 Output example (client-friendly interpretation):
-
 Out of all transactions, the model correctly identifies the majority of legitimate transactions.
-
 It flags high-risk transactions (fraud) with high precision.
-
 False positives are minimal, meaning clients won’t be overwhelmed with unnecessary alerts.
-
 The model and the list of features are saved as model.pkl and features.pkl for dashboard use.
-
 Running the Interactive Dashboard
 Ensure model.pkl and features.pkl exist (from running main.py).
 
-Launch the dashboard:
-
-bash
-Copy code
+**Launch the dashboard:**
 python dashboard.py
 Open your browser at the URL displayed (usually http://127.0.0.1:8050/).
-
 Dashboard Features
 Fraud Probability Histogram
-
 Shows the distribution of predicted fraud probabilities for all transactions.
-
 Helps clients see how many transactions are low-risk versus high-risk.
-
 Top 10 Risky Transactions
-
 Displays the accounts with the highest predicted fraud probabilities.
-
 Hover over bars to see transaction details like amount and balance differences.
-
 Transaction Type Pie Chart
-
 Visualizes proportions of transaction types (CASH_IN, CASH_OUT, PAYMENT, TRANSFER).
-
 Helps clients understand which types are more prone to fraud.
-
 Interactive Sliders
-
 Filter transactions by minimum fraud probability and minimum transaction amount.
-
 Explore scenarios and focus on high-risk transactions.
-
 Interpreting Results (Client-Friendly)
 Fraud Probability
-
 Ranges from 0 (low risk) to 1 (high risk).
-
 Example: A transaction with a 0.9 probability is very likely fraudulent.
-
 Top Risky Transactions
-
 Quick way to prioritize investigations.
-
 Clients can immediately flag or freeze suspicious accounts.
-
 Transaction Type Insights
-
 Understand which transaction types are most vulnerable.
-
 Helps in designing additional safeguards or monitoring policies.
-
 Dashboard Filters
-
 Focus on high-value transactions or high-risk accounts.
-
 Clients can experiment with thresholds to balance workload vs. risk.
 
-Dependencies
+**Dependencies**
 Python >= 3.8
 pandas
 numpy
@@ -158,10 +117,10 @@ joblib
 plotly
 dash
 
-Install all dependencies:
+**Install all dependencies:**
 pip install -r requirements.txt
-
-Summary
+**
+Summary**
 This project provides:
 - A robust machine learning model for fraud detection
 - Client-ready interpretation of results
