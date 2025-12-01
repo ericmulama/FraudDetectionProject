@@ -15,7 +15,9 @@ The pipeline includes:
 ## Folder Structure
 
 FraudDetectionProject/
+
 │── data/
+
 │ └── Fraud.csv
 │
 │── notebooks/
