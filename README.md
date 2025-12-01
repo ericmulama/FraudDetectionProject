@@ -12,8 +12,6 @@ The pipeline includes:
 - Evaluation using **confusion matrix** and **classification report**  
 - An interactive **Plotly Dash dashboard** to visualize predictions  
 
----
-
 ## Folder Structure
 
 FraudDetectionProject/
@@ -37,21 +35,15 @@ FraudDetectionProject/
 │── requirements.txt
 │── README.md
 
-yaml
-Copy code
-
----
 
 ## Installation
 
 1. Clone this repository:
 
-```bash
+
 git clone <repository-url>
 cd FraudDetectionProject
 Create a virtual environment and activate it:
-
-bash
 Copy code
 python -m venv venv
 # Windows
@@ -60,16 +52,12 @@ venv\Scripts\activate
 source venv/bin/activate
 Install required packages:
 
-bash
-Copy code
 pip install -r requirements.txt
 Running the ML Pipeline
 Make sure data/Fraud.csv exists.
 
 Run main.py to execute the full pipeline:
 
-bash
-Copy code
 python main.py
 This will:
 
@@ -161,35 +149,21 @@ Clients can experiment with thresholds to balance workload vs. risk.
 
 Dependencies
 Python >= 3.8
-
 pandas
-
 numpy
-
 scikit-learn
-
 xgboost
-
 imbalanced-learn
-
 joblib
-
 plotly
-
 dash
 
 Install all dependencies:
-
-bash
-Copy code
 pip install -r requirements.txt
+
 Summary
 This project provides:
-
-A robust machine learning model for fraud detection
-
-Client-ready interpretation of results
-
-An interactive dashboard to monitor fraud in real-time
-
-It enables proactive detection of suspicious transactions, helping clients minimize financial loss and improve operational efficiency.
+- A robust machine learning model for fraud detection
+- Client-ready interpretation of results
+- An interactive dashboard to monitor fraud in real-time
+- It enables proactive detection of suspicious transactions, helping clients minimize financial loss and improve operational efficiency.
