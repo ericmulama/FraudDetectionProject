@@ -49,10 +49,10 @@ To create vitrual environment  copy and paste "python -m venv venv" project fold
 
 To activate the virtual environment 
 
-# In windows Windows
+**In windows Windows**
 venv\Scripts\activate
 
-# In macOS/Linux
+**In macOS/Linux**
 source venv/bin/activate
 
 3. Install required packages:
