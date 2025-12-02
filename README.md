@@ -15,25 +15,25 @@ The pipeline includes:
 ## Folder Structure
 
 FraudDetectionProject/
-│── data/
-│ └── Fraud.csv
+├── data/
+│   └── Fraud.csv
 │
-│── notebooks/
-│ └── Fraud_Detection.ipynb ← EDA, plots, and explanations
+├── notebooks/
+│   └── Fraud_Detection.ipynb        # EDA, plots, explanations
 │
-│── src/
-│ ├── load_data.py
-│ ├── eda.py
-│ ├── features.py
-│ ├── preprocessing/
-│ │ └── preprocessing.py
-│ ├── model.py
-│ └── utils.py
+├── src/
+│   ├── load_data.py
+│   ├── eda.py
+│   ├── features.py
+│   ├── preprocessing/
+│   │   └── preprocessing.py
+│   ├── model.py
+│   └── utils.py
 │
-│── main.py ← Runs the full ML pipeline
-│── dashboard.py ← Runs the interactive dashboard
-│── requirements.txt
-│── README.md
+├── main.py                          # Runs the ML training pipeline
+├── dashboard.py                     # Runs the interactive dashboard (Plotly Dash)
+├── requirements.txt
+└── README.md
 
 ## Installation
 
