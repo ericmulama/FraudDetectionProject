@@ -30,10 +30,11 @@ FraudDetectionProject/
 │   ├── model.py
 │   └── utils.py
 │
-├── main.py                          # Runs the ML training pipeline
-├── dashboard.py                     # Runs the interactive dashboard (Plotly Dash)
+├── main.py                          # Machine Learning pipeline
+├── dashboard.py                     # Interactive Plotly Dash dashboard
 ├── requirements.txt
 └── README.md
+
 
 ## Installation
 
