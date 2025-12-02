@@ -15,24 +15,43 @@ The pipeline includes:
 ## Folder Structure
 
 FraudDetectionProject/
+
 ├── data/
+
 │   └── Fraud.csv
+
 │
+
 ├── notebooks/
+
 │   └── Fraud_Detection.ipynb        # EDA, plots, explanations
+
 │
+
 ├── src/
+
 │   ├── load_data.py
+
 │   ├── eda.py
+
 │   ├── features.py
+
 │   ├── preprocessing/
+
 │   │   └── preprocessing.py
+
 │   ├── model.py
+
 │   └── utils.py
+
 │
+
 ├── main.py                          # Machine Learning pipeline
+
 ├── dashboard.py                     # Interactive Plotly Dash dashboard
+
 ├── requirements.txt
+
 └── README.md
 
 
